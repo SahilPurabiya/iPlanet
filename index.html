@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>iPlanet</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <script src="script.js"></script>
+
+  <label for="pixelSize">Pixel Size:</label>
+  <select id="pixelSize" name="pixelSize">s
+    <option value="2">2</option>
+    <option value="2.4">2.4</option>
+    <option value="2.9">2.9</option>
+    <option value="3.75">3.75</option>
+    <option value="3.76">3.76</option>
+    <option value="3.8">3.8</option>
+    <option value="4.63">4.63</option>
+    <option value="5.8">5.8</option>
+    <option value="5.86">5.86</option>
+    <option value="9">9</option>
+  </select>
+  <br>
+
+  <label for="SCondition">Seeing Condition:</label>
+  <select id="SCondition" name="SCondition">
+    <option value="5">Poor</option>
+    <option value="6">Average</option>
+    <option value="7">Great</option>
+  </select>
+  <br>
+
+  <label for="fRatio">Focal Ratio:</label>
+  <select id="fRatio" name="fRatio">
+    <option value="4">f/4</option>
+    <option value="5">f/5</option>
+    <option value="6">f/6</option>
+    <option value="7">f/7</option>
+    <option value="8">f/8</option>
+    <option value="9">f/9</option>
+    <option value="10">f/10</option>
+    <option value="11">f/11</option>
+    <option value="12">f/12</option>
+    <option value="13">f/13</option>
+    <option value="14">f/14</option>
+    <option value="15">f/15</option>
+  </select>
+  <br>
+
+  <label for="barlow">Barlow:</label>
+  <select id="barlow" name="barlow">
+    <option value="1">1x</option>
+    <option value="2">2x</option>
+    <option value="3">3x</option>
+    <option value="4">4x</option>
+    <option value="5">5x</option>
+  </select>
+  <br>
+
+  <h3 id="result1">Needed Barlow: none</h3>
+  <input type="button" value="Calculate" onclick="NeededBarlow()">
+
+  <h3 id="result2">Focal Ratio Needed: none</h3>
+  <input type="button" value="Calculate" onclick="FocalRatioNeeded()">
+
+  <h3 id="result3">Pixel Size Needed: none</h3>
+  <input type="button" value="Calculate" onclick="PixelSizeNeeded()">
+
+
+
+
+
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
